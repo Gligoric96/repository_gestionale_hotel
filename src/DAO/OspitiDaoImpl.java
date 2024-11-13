@@ -1,4 +1,4 @@
 package DAO;
 
-public class OspitiDaoImpl implements OspitiDao {
+public class OspitiDaoImpl implements OspitiDaoInterface {
 }

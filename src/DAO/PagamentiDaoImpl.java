@@ -1,4 +1,4 @@
 package DAO;
 
-public class PagamentiDaoImpl implements PagamentiDao {
+public class PagamentiDaoImpl implements PagamentiDaoInteface {
 }
