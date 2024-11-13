@@ -1,3 +1,5 @@
+package DB;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -6,14 +8,24 @@ public class DatabaseConnection {
 
     private static final String url = "jdbc:mysql://localhost:3306/gestionale_hotel";
     private static final String username = "root";
-    private static final String password = "";
+    private static final String password = "password";
     private static Connection connection = null;
 
 
     //Costruttore privato per evitare istanziazioni
     private DatabaseConnection() {};
 
+    public static String getUrl() {
+        return url;
+    }
 
+    public static String getUsername() {
+        return username;
+    }
+
+    public static String getPassword() {
+        return password;
+    }
 
     // Metodo per connettersi
     public static Connection getConnection() {
@@ -48,4 +60,6 @@ public class DatabaseConnection {
             }
         }
     }
+
+
 }
