@@ -1,31 +1,31 @@
 package DAO;
-import Entity.Camere;
+import Entity.Camera;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class CamereDaoImpl implements CamereDaoInterface {
+public class CameraDaoImpl implements CameraDaoInterface {
 
     @Override
-    public void aggiungiCamera(Camere camera) {
+    public void aggiungiCamera(Camera camera) {
         // Implementazione JDBC per aggiungere una camera nel database
     }
 
     @Override
-    public Camere leggiCamera(int idCamera) {
+    public Camera leggiCamera(int idCamera) {
         // Implementazione JDBC per leggere una camera dal database
         return null; // Placeholder
     }
 
     @Override
-    public List<Camere> getTutteLeCamere() {
+    public List<Camera> getTutteLeCamere() {
         // Implementazione JDBC per ottenere tutte le camere
         return new ArrayList<>(); // Placeholder
     }
 
     @Override
-    public void aggiornaCamera(Camere camera) {
+    public void aggiornaCamera(Camera camera) {
         // Implementazione JDBC per aggiornare una camera nel database
     }
 

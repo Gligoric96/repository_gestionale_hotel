@@ -1,6 +1,6 @@
 package Entity;
 
-public class Ospiti {
+public class Ospite {
     private int id;
     private String nome;
     private String cognome;
@@ -8,7 +8,7 @@ public class Ospiti {
     private String email;
 
     // Costruttore
-    public Ospiti(int id, String nome, String cognome, String telefono, String email) {
+    public Ospite(int id, String nome, String cognome, String telefono, String email) {
         this.id = id;
         this.nome = nome;
         this.cognome = cognome;

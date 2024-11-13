@@ -2,7 +2,7 @@ package Entity;
 
 import java.time.LocalDate;
 
-public class Prenotazioni {
+public class Prenotazione {
 
     private int id;
     private int idOspite;
@@ -12,7 +12,7 @@ public class Prenotazioni {
 
     // Costruttore
 
-    public Prenotazioni(int id, int idOspite, int idCamera, LocalDate dataCheckIn, LocalDate dataChekOut) {
+    public Prenotazione(int id, int idOspite, int idCamera, LocalDate dataCheckIn, LocalDate dataChekOut) {
         this.id = id;
         this.idOspite = idOspite;
         this.idCamera = idCamera;

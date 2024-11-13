@@ -3,7 +3,7 @@ package Entity;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class Pagamenti {
+public class Pagamento {
     private int id;
     private int idPrenotazione;
     private BigDecimal importo;
@@ -11,7 +11,7 @@ public class Pagamenti {
 
     // Costruttore
 
-    public Pagamenti(int id, int idPrenotazione, BigDecimal importo, LocalDate dataPagamento) {
+    public Pagamento(int id, int idPrenotazione, BigDecimal importo, LocalDate dataPagamento) {
         this.id = id;
         this.idPrenotazione = idPrenotazione;
         this.importo = importo;

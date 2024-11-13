@@ -2,7 +2,7 @@ package Entity;
 
 import java.math.BigDecimal;
 
-public class Camere {
+public class Camera {
     private int id;
     private int numeroCamera;
     private String tipologia;
@@ -10,7 +10,7 @@ public class Camere {
     private String stato;
 
     // Costruttore
-    public Camere(int id, int numeroCamera, String tipologia, BigDecimal prezzo, String stato) {
+    public Camera(int id, int numeroCamera, String tipologia, BigDecimal prezzo, String stato) {
         this.id = id;
         this.numeroCamera = numeroCamera;
         this.tipologia = tipologia;
