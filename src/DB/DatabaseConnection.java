@@ -8,7 +8,7 @@ public class DatabaseConnection {
 
     private static final String url = "jdbc:mysql://localhost:3306/gestionale_hotel";
     private static final String username = "root";
-    private static final String password = "password";
+    private static final String password = "";
     private static Connection connection = null;
 
 
@@ -27,22 +27,22 @@ public class DatabaseConnection {
         return password;
     }
 
+
+
+
     // Metodo per connettersi
     public static Connection getConnection() {
-        if (connection == null) {
-            try {
-                Class.forName("com.mysql.cj.jdbc.Driver");
-                connection = DriverManager.getConnection(url, username, password);
-                System.out.println("Connessione stabilita");
-            } catch (ClassNotFoundException e) {
-                System.out.println("JDBC driver non trovato!");
-                e.printStackTrace();
-            } catch (SQLException e) {
-                System.out.println("Connessione fallita");
-                e.printStackTrace();
-            }
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            return DriverManager.getConnection(url, username, password);
+        } catch (ClassNotFoundException e) {
+            System.out.println("JDBC driver non trovato!");
+            e.printStackTrace();
+        } catch (SQLException e) {
+            System.out.println("Connessione fallita");
+            e.printStackTrace();
         }
-        return connection;
+        return null;
     }
 
 

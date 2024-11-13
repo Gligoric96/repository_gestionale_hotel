@@ -9,8 +9,9 @@ public class Pagamento {
     private BigDecimal importo;
     private LocalDate dataPagamento;
 
-    // Costruttore
 
+
+    // Costruttore
     public Pagamento(int id, int idPrenotazione, BigDecimal importo, LocalDate dataPagamento) {
         this.id = id;
         this.idPrenotazione = idPrenotazione;
@@ -18,10 +19,10 @@ public class Pagamento {
         this.dataPagamento = dataPagamento;
     }
 
+
+
     // Getter e Setter
-
-
-    public int getId() {
+    public int getIdPagamento() {
         return id;
     }
 

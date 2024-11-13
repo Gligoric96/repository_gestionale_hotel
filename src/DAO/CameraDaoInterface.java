@@ -1,25 +1,14 @@
 package DAO;
+
 import Entity.Camera;
-import java.util.List;
+import java.util.ArrayList;
 
 public interface CameraDaoInterface {
-
+    void popolaTabellaCamere();
     void aggiungiCamera(Camera camera);
-
     Camera leggiCamera(int idCamera);
-
-    List<Camera> getTutteLeCamere();
-
-    void aggiornaCamera(Camera camera);
-
+    ArrayList<Camera> getTutteLeCamere();
+    void aggiornaCamera(Camera camera, String stato);
     void eliminaCamera(int idCamera);
-
-    public interface CameraDAOInterface {
-        void aggiungiCamera(Camera camera);
-        Camera leggiCamera(int idCamera);
-        List<Camera> getTutteLeCamere();
-        void aggiornaCamera(Camera camera);
-        void eliminaCamera(int idCamera);
-    }
-
 }
+

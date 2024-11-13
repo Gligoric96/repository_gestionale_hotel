@@ -16,10 +16,20 @@ public class Ospite {
         this.email = email;
     }
 
+
+    // Costruttore senza id
+    public Ospite(String nome, String cognome, String telefono, String email) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.telefono = telefono;
+        this.email = email;
+    }
+
+
+
+
     // Getter e Setter
-
-
-    public int getId() {
+    public int getIdOspite() {
         return id;
     }
 
