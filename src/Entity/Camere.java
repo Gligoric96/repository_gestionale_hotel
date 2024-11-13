@@ -4,13 +4,13 @@ import java.math.BigDecimal;
 
 public class Camere {
     private int id;
-    private String numeroCamera;
+    private int numeroCamera;
     private String tipologia;
     private BigDecimal prezzo;
     private String stato;
 
     // Costruttore
-    public Camere(int id, String numeroCamera, String tipologia, BigDecimal prezzo, String stato) {
+    public Camere(int id, int numeroCamera, String tipologia, BigDecimal prezzo, String stato) {
         this.id = id;
         this.numeroCamera = numeroCamera;
         this.tipologia = tipologia;
@@ -27,11 +27,11 @@ public class Camere {
         this.id = id;
     }
 
-    public String getNumeroCamera() {
+    public int getNumeroCamera() {
         return numeroCamera;
     }
 
-    public void setNumeroCamera(String numeroCamera) {
+    public void setNumeroCamera(int numeroCamera) {
         this.numeroCamera = numeroCamera;
     }
 
